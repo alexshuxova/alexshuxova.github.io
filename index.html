@@ -1,1 +1,390 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>test task</title><!-- RESET -->
+    <link rel="stylesheet" type="text/css" href="reset.css"><!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="main.css"><!-- DATATABLES -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"><!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper"><!--============ HEADER =============-->
+      <header class="header">
+        <div class="base-col"><a href="#" id="header__logo"><img src="logo.png"></a>
+          <form class="header__form" action="" method="post">
+            <label>
+              <input class="form-input" type="search" name="" placeholder="Shipyard name, vessel">
+            </label>
+            <label class="label-submit">
+              <input class="form-submit" type="submit" name="" value="">
+            </label>
+          </form><!--============ DROPDOWN =============-->
+          <ul class="header__menu">
+            <li class="language">
+              <ul class="select_lang">
+                <li><a class="select_lang__gb" href="#"></a></li>
+                <li><a class="select_lang__dm" href="#"></a></li>
+              </ul>
+            </li>
+            <li class="user-profile">
+              <ul class="user_dropdown">
+                <li><a href="#">Submenu#1</a></li>
+                <li><a href="#">Submenu#2</a></li>
+                <li><a href="#">Submenu#3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header><!--============ SLIDER =============-->
+      <section class="ship_slider">
+        <div class="base-col">
+          <div class="slider">
+            <ul class="slider__image">
+              <li><img src="ship1_big.jpg"></li>
+              <li><img src="ship1_big.jpg"></li>
+              <li><img src="ship1_big.jpg"></li>
+            </ul>
+          </div>
+        </div>
+      </section><!--============ SECTION EMMA MAERSK GROUP =============-->
+      <section class="section -emma-maersk">
+        <div class="base-col">
+          <div class="maersk__group">
+            <h1 class="company">Emma Maersk<span>/ Emma Maersk Group</span>
+              <p class="country">Denmark, Odense</p>
+            </h1>
+            <table class="table maersk__table">
+              <tr class="row">
+                <td class="cell options">Type:</td>
+                <td class="cell meanings">Cargo</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options"> Year of Build:</td>
+                <td class="cell meanings">2006</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options">IMO:</td>
+                <td class="cell meanings">9474060</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options"> Callsign:</td>
+                <td class="cell meanings">ESJO</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options"> MMSI:</td>
+                <td class="cell meanings">276786000</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options empty-cell"></td>
+                <td class="cell meanings empty-cell"></td>
+              </tr>
+              <tr class="row empty-row">
+                <td class="cell options">Length:</td>
+                <td class="cell meanings">200.0m</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options"> Beam:</td>
+                <td class="cell meanings">18.0m</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options">GRT:</td>
+                <td class="cell meanings">20000</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options empty-cell"></td>
+                <td class="cell meanings empty-cell"></td>
+              </tr>
+              <tr class="row empty-row">
+                <td class="cell options"> Manager:</td>
+                <td class="cell meanings">MAERSK LINE A/S</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options"> Owner:</td>
+                <td class="cell meanings">MAERSK LINE A/S</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options">Insurer:</td>
+                <td class="cell meanings">BRITANNIA STEAMSHIP INSURANCE ASSOCIATION LD</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options empty-cell"></td>
+                <td class="cell meanings empty-cell"></td>
+              </tr>
+              <tr class="row empty-row">
+                <td class="cell options"> Shipyard:</td>
+                <td class="cell meanings">ODENSE STEEL SHIPYARD LTD.</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options">Class:</td>
+                <td class="cell meanings">DNVGL</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options"> Engine:</td>
+                <td class="cell meanings">DOOSAN ENGINE CO. LTD.</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options"> Aux Engine:</td>
+                <td class="cell meanings">MAK 6M43</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options empty-cell"></td>
+                <td class="cell meanings empty-cell"></td>
+              </tr>
+              <tr class="row">
+                <td class="cell options">Vessel age:</td>
+                <td class="cell meanings">11 years</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options"> Next Docking:</td>
+                <td class="cell meanings">JAN 2018 (expected)</td>
+              </tr>
+              <tr class="row">
+                <td class="cell options">Next Survey:</td>
+                <td class="cell meanings">JAN 2018</td>
+              </tr>
+            </table>
+          </div><!--============ BLOCK ROUTE =============-->
+          <div class="maersk__route">
+            <ul class="maersk__images">
+              <li><img src="ship1_small.png"></li>
+              <li><img src="ship2_small.png"></li>
+              <li><img src="ship3_small.png"></li>
+            </ul>
+            <div class="maersk__position"><span>Actual Position</span><img src="dest.png"><a class="plan_route-btn" href="#">Plan Route from this Position to shipyard</a></div>
+          </div>
+        </div>
+      </section><!--============ SECTION ENGINE =============-->
+      <section class="section -engine">
+        <div class="base-col">
+          <table class="table sort-table display responsive nowrap" id="-engine_table" style="width:100%;">
+            <caption class="table_header">Engine</caption>
+            <thead>
+              <tr class="row row_header">
+                <td class="cell cell_header engine__cell">Column</td>
+                <td class="cell cell_header engine__cell">Column</td>
+                <td class="cell cell_header engine__cell">Column</td>
+                <td class="cell cell_header engine__cell">Column</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row">
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+              </tr>
+              <tr class="row">
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+              </tr>
+              <tr class="row">
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+              </tr>
+              <tr class="row">
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+              </tr>
+              <tr class="row">
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+                <td class="cell table_content engine__cell">Data</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section><!--============ SECTION SELECT CHART =============-->
+      <section class="-select_chart">
+        <div class="base-col">
+          <div class="select_chart__buttons">
+            <input id="working_hours" type="radio" name="select_chart" checked="">
+            <label class="working-btn" for="working_hours" data-id="working__chart">Working hours per Month</label>
+            <input id="speed_profile" type="radio" name="select_chart">
+            <label class="speed-btn" for="speed_profile" data-id="speed__chart">Speed Profile</label>
+          </div><!-- ============ CHARTS ============ -->
+          <canvas class="chart" id="working__chart" height="100"></canvas>
+          <canvas class="chart -hide" id="speed__chart" height="100"></canvas>
+        </div>
+      </section><!--============ SECTION HISTORY =============-->
+      <section class="section -history">
+        <div class="base-col">
+          <table class="table sort-table display responsive nowrap" id="-history_table" style="width:100%;">
+            <caption class="table_header">Shipyards history</caption>
+            <thead>
+              <tr class="row row_header">
+                <td class="cell cell_header history__cell">Start time<span></span></td>
+                <td class="cell cell_header history__cell">End time<span></span></td>
+                <td class="cell cell_header history__cell">Yard name<span></span></td>
+                <td class="cell cell_header history__cell">Country<span></span></td>
+                <td class="cell cell_header history__cell">Duration</td><span></span>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row">
+                <td class="cell table_content history__cell">2015-08-14 06:35:43.2515</td>
+                <td class="cell table_content history__cell">2015-11-14 06:35:43.2515</td>
+                <td class="cell table_content history__cell">Emma Maersk</td>
+                <td class="cell table_content history__cell">Denmark</td>
+                <td class="cell table_content history__cell">-76 days</td>
+              </tr>
+              <tr class="row">
+                <td class="cell table_content history__cell">2015-07-28 06:35:43.968</td>
+                <td class="cell table_content history__cell">2015-10-14 06:35:43.968</td>
+                <td class="cell table_content history__cell">Emma Maersk</td>
+                <td class="cell table_content history__cell">Denmark</td>
+                <td class="cell table_content history__cell">28 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section><!--============ SECTION PORTS =============-->
+      <section class="section -ports">
+        <div class="base-col"><!--============ FIRST PORTS TABLE ============-->
+          <div class="ports__table">
+            <table class="table sort-table display responsive nowrap" id="-ports_top" style="width:100%;">
+              <caption class="table_header">Top Ports</caption>
+              <thead>
+                <tr class="row row_header">
+                  <td class="cell cell_header port__cell">Port<span></span></td>
+                  <td class="cell cell_header port__cell">Berth<span></span></td>
+                  <td class="cell cell_header port__cell">Cast off<span></span></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="row">
+                  <td class="cell table_content port__cell">Hamburg</td>
+                  <td class="cell table_content port__cell">42</td>
+                  <td class="cell table_content port__cell">24</td>
+                </tr>
+                <tr class="row">
+                  <td class="cell table_content port__cell">Rotterdam</td>
+                  <td class="cell table_content port__cell">55</td>
+                  <td class="cell table_content port__cell">31</td>
+                </tr>
+              </tbody>
+            </table><!--============ LAST PORTS TABLE =============-->
+            <table class="table sort-table display responsive nowrap" id="-ports_last" style="width:100%;">
+              <caption class="table_header">Last Ports</caption>
+              <thead>
+                <tr class="row row_header">
+                  <td class="cell cell_header port__cell">Start time<span></span></td>
+                  <td class="cell cell_header port__cell">End time<span></span></td>
+                  <td class="cell cell_header port__cell">Yard time<span></span></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="row">
+                  <td class="cell table_content port__cell">2015-08-14 06:35:43.2515</td>
+                  <td class="cell table_content port__cell">2015-11-14 06:35:43.2515</td>
+                  <td class="cell table_content port__cell">Emma Maersk</td>
+                </tr>
+                <tr class="row">
+                  <td class="cell table_content port__cell">2015-07-28 06:35:43.968</td>
+                  <td class="cell table_content port__cell">2015-10-14 06:35:43.968</td>
+                  <td class="cell table_content port__cell">Emma Maersk</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ports__map"><span>Sailing Area</span><img src="map.png"></div>
+        </div>
+      </section><!--============ SECTION MASTER DATA =============-->
+      <section class="section -master_data">
+        <div class="base-col">
+          <h1 class="master__header">Master Data</h1>
+          <div class="master__menu">
+            <ul class="master__menu-col">
+              <li><a class="menu__link" href="#">General</a></li>
+              <li><a class="menu__link" href="#">Management</a></li>
+              <li><a class="menu__link" href="#">Tonnage</a></li>
+              <li><a class="menu__link" href="#">Dimensions</a></li>
+            </ul>
+            <ul class="master__menu-col">
+              <li><a class="menu__link" href="#">Capacity</a></li>
+              <li><a class="menu__link" href="#">Yard</a></li>
+              <li><a class="menu__link" href="#">Classification</a></li>
+            </ul>
+          </div><!--============ MASTER DATA TABLE =============-->
+          <table class="table master__table">
+            <tr class="row">
+              <td class="cell options">Name of vessel</td>
+              <td class="cell meanings">EMMA MAERSK</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Imo</td>
+              <td class="cell meanings">9474060</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Mmsi</td>
+              <td class="cell meanings">2767860000</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options"> Callsign</td>
+              <td class="cell meanings">ESJO</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Flag</td>
+              <td class="cell meanings">GERMANY</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Vessel type</td>
+              <td class="cell meanings">GAS TANKER > LNG TANKER</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Port of Registry</td>
+              <td class="cell meanings">ROSTOCK</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Service Speed</td>
+              <td class="cell meanings">19.5</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Status of Ship Standartized</td>
+              <td class="cell meanings">IN SERVICE / COMMISION</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Status of Normalized</td>
+              <td class="cell meanings">25/05/2014</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Hull Type</td>
+              <td class="cell meanings">DOUBLE HULL</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Hull Material</td>
+              <td class="cell meanings">ODENSE STEEL SHIPYORDINARY STRENGHT STEEL - ABS - CRADE A</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Decks Number</td>
+              <td class="cell meanings">1</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Bulkheads</td>
+              <td class="cell meanings">17</td>
+            </tr>
+            <tr class="row">
+              <td class="cell options">Size Class</td>
+              <td class="cell meanings">AFRAMAX</td>
+            </tr>
+          </table>
+        </div>
+      </section><!--============ FOOTER =============-->
+      <footer class="footer">
+        <div class="base-col"><span class="copyright">2017 © MDS</span><a class="social_link" href="https://www.linkedin.com/"><img src="in.png"></a><a class="social_link" href="https://www.facebook.com/"><img src="fb.png"></a><a class="footer__link" href="#">Imprint</a><a class="footer__link" href="#">Terms & conditions</a><a class="footer__link" href="#">Privacy policy</a><a class="footer__link" href="#">Accounts</a><a class="footer__link" href="#">Shipowners</a><a class="footer__link" href="#">Shipyards</a><a class="footer__link" href="#">Catalog</a><a class="footer__link" href="#">Contact</a><a class="footer__link" href="#">Blog</a></div>
+      </footer>
+    </div><!-- =========== CHART.JS ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script><!-- ============ JQUERY =========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- ============ DATATABLES ============= -->
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script><!-- ============= SCRIPTS  ============ -->
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

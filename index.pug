@@ -1,0 +1,420 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width')
+		title test task
+		<!-- RESET -->
+		link(rel='stylesheet', type='text/css', href='reset.css')
+		<!-- STYLES -->
+		link(rel='stylesheet', type='text/css', href='main.css')
+		<!-- DATATABLES -->
+		link(rel='stylesheet', type='text/css', href='https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css')
+		<!-- FONTS -->
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600', rel='stylesheet')
+	body
+		div.wrapper
+
+
+
+			<!--============ HEADER =============-->
+
+
+			header.header
+				div.base-col
+					a(href='#')#header__logo
+						img(src='logo.png')
+
+					form.header__form(action="")(method="post")
+						label
+							input.form-input(type="search")(name="")(placeholder="Shipyard name, vessel")
+						label.label-submit
+							input.form-submit(type="submit")(name="")(value="")
+
+					<!--============ DROPDOWN =============-->
+
+					ul.header__menu
+						li.language
+							ul.select_lang
+								li
+									a(href='#').select_lang__gb
+								li
+									a(href='#').select_lang__dm
+						li.user-profile
+							ul.user_dropdown
+								li
+									a(href='#') Submenu#1
+								li
+									a(href='#') Submenu#2
+								li
+									a(href='#') Submenu#3
+
+
+
+			<!--============ SLIDER =============-->
+
+			section.ship_slider
+				div.base-col
+					div.slider
+						ul.slider__image
+							li
+								img(src='ship1_big.jpg')
+							li
+								img(src='ship1_big.jpg')
+							li
+								img(src='ship1_big.jpg')
+
+
+
+			<!--============ SECTION EMMA MAERSK GROUP =============-->
+
+
+			section.section.-emma-maersk
+				div.base-col
+					div.maersk__group
+						h1.company Emma Maersk
+								span / Emma Maersk Group
+								p.country Denmark, Odense
+						table.table.maersk__table
+							tr.row
+								td.cell.options Type:
+								td.cell.meanings Cargo
+							tr.row
+								td.cell.options  Year of Build:
+								td.cell.meanings 2006
+							tr.row
+								td.cell.options IMO:
+								td.cell.meanings 9474060
+							tr.row
+								td.cell.options  Callsign:
+								td.cell.meanings ESJO
+							tr.row
+								td.cell.options  MMSI:
+								td.cell.meanings 276786000
+							tr.row
+								td.cell.options.empty-cell
+								td.cell.meanings.empty-cell
+							tr.row.empty-row
+								td.cell.options Length:
+								td.cell.meanings 200.0m
+							tr.row
+								td.cell.options  Beam:
+								td.cell.meanings 18.0m
+							tr.row
+								td.cell.options GRT:
+								td.cell.meanings 20000
+							tr.row
+								td.cell.options.empty-cell
+								td.cell.meanings.empty-cell
+							tr.row.empty-row
+								td.cell.options  Manager:
+								td.cell.meanings MAERSK LINE A/S
+							tr.row
+								td.cell.options  Owner:
+								td.cell.meanings MAERSK LINE A/S
+							tr.row
+								td.cell.options Insurer:
+								td.cell.meanings BRITANNIA STEAMSHIP INSURANCE ASSOCIATION LD
+							tr.row
+								td.cell.options.empty-cell
+								td.cell.meanings.empty-cell
+							tr.row.empty-row
+								td.cell.options  Shipyard:
+								td.cell.meanings ODENSE STEEL SHIPYARD LTD.
+							tr.row
+								td.cell.options Class:
+								td.cell.meanings DNVGL
+							tr.row
+								td.cell.options  Engine:
+								td.cell.meanings DOOSAN ENGINE CO. LTD.
+							tr.row
+								td.cell.options  Aux Engine:
+								td.cell.meanings MAK 6M43
+							tr.row
+								td.cell.options.empty-cell
+								td.cell.meanings.empty-cell
+							tr.row
+								td.cell.options Vessel age:
+								td.cell.meanings 11 years
+							tr.row
+								td.cell.options  Next Docking:
+								td.cell.meanings JAN 2018 (expected)
+							tr.row
+								td.cell.options Next Survey:
+								td.cell.meanings JAN 2018
+
+					<!--============ BLOCK ROUTE =============-->
+
+					div.maersk__route
+						ul.maersk__images
+							li
+								img(src='ship1_small.png')
+							li
+								img(src='ship2_small.png')
+							li
+								img(src='ship3_small.png')
+						div.maersk__position
+							span Actual Position
+							img(src='dest.png')
+							a(href='#').plan_route-btn Plan Route from this Position to shipyard
+
+
+
+			<!--============ SECTION ENGINE =============-->
+
+
+			section.section.-engine
+				div.base-col
+					table.table.sort-table#-engine_table.display.responsive.nowrap(style='width:100%')
+						caption.table_header Engine
+						thead
+							tr.row.row_header
+								td.cell.cell_header.engine__cell Column
+								td.cell.cell_header.engine__cell Column
+								td.cell.cell_header.engine__cell Column
+								td.cell.cell_header.engine__cell Column
+						tbody
+							tr.row
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+							tr.row
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+							tr.row
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+							tr.row
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+							tr.row
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+								td.cell.table_content.engine__cell Data
+
+
+
+			<!--============ SECTION SELECT CHART =============-->
+
+
+			section.-select_chart
+				div.base-col
+					div.select_chart__buttons
+						input#working_hours(type='radio' name='select_chart' checked='')
+						label.working-btn(for='working_hours', data-id='working__chart') Working hours per Month
+						input#speed_profile(type='radio' name='select_chart')
+						label.speed-btn(for='speed_profile', data-id='speed__chart') Speed Profile
+
+					<!-- ============ CHARTS ============ -->
+
+					canvas.chart#working__chart(height='100')
+					canvas.chart.-hide#speed__chart(height='100')
+
+
+
+
+			<!--============ SECTION HISTORY =============-->
+
+
+			section.section.-history
+				div.base-col
+					table.table.sort-table#-history_table.display.responsive.nowrap(style='width:100%')
+						caption.table_header Shipyards history
+						thead
+							tr.row.row_header
+								td.cell.cell_header.history__cell Start time
+									span
+								td.cell.cell_header.history__cell End time
+									span
+								td.cell.cell_header.history__cell Yard name
+									span
+								td.cell.cell_header.history__cell Country
+									span
+								td.cell.cell_header.history__cell Duration
+								span
+						tbody
+							tr.row
+								td.cell.table_content.history__cell 2015-08-14 06:35:43.2515
+								td.cell.table_content.history__cell 2015-11-14 06:35:43.2515
+								td.cell.table_content.history__cell Emma Maersk
+								td.cell.table_content.history__cell Denmark
+								td.cell.table_content.history__cell -76 days
+							tr.row
+								td.cell.table_content.history__cell 2015-07-28 06:35:43.968
+								td.cell.table_content.history__cell 2015-10-14 06:35:43.968
+								td.cell.table_content.history__cell Emma Maersk
+								td.cell.table_content.history__cell Denmark
+								td.cell.table_content.history__cell 28 days
+
+
+
+			<!--============ SECTION PORTS =============-->
+
+
+			section.section.-ports
+				div.base-col
+
+					<!--============ FIRST PORTS TABLE ============-->
+					div.ports__table
+						table.table.sort-table#-ports_top.display.responsive.nowrap(style='width:100%')
+							caption.table_header Top Ports
+							thead
+								tr.row.row_header
+									td.cell.cell_header.port__cell Port
+										span
+									td.cell.cell_header.port__cell Berth
+										span
+									td.cell.cell_header.port__cell Cast off
+										span
+							tbody
+								tr.row
+									td.cell.table_content.port__cell Hamburg
+									td.cell.table_content.port__cell 42
+									td.cell.table_content.port__cell 24
+								tr.row
+									td.cell.table_content.port__cell Rotterdam
+									td.cell.table_content.port__cell 55
+									td.cell.table_content.port__cell 31
+
+						<!--============ LAST PORTS TABLE =============-->
+						table.table.sort-table#-ports_last.display.responsive.nowrap(style='width:100%')
+							caption.table_header Last Ports
+							thead
+								tr.row.row_header
+									td.cell.cell_header.port__cell Start time
+										span
+									td.cell.cell_header.port__cell End time
+										span
+									td.cell.cell_header.port__cell Yard time
+										span
+							tbody
+								tr.row
+									td.cell.table_content.port__cell 2015-08-14 06:35:43.2515
+									td.cell.table_content.port__cell 2015-11-14 06:35:43.2515
+									td.cell.table_content.port__cell Emma Maersk
+								tr.row
+									td.cell.table_content.port__cell 2015-07-28 06:35:43.968
+									td.cell.table_content.port__cell 2015-10-14 06:35:43.968
+									td.cell.table_content.port__cell Emma Maersk
+					div.ports__map
+						span Sailing Area
+						img(src='map.png')
+
+
+
+			<!--============ SECTION MASTER DATA =============-->
+
+
+			section.section.-master_data
+				.base-col
+					h1.master__header Master Data
+					div.master__menu
+						ul.master__menu-col
+							li
+								a(href='#').menu__link General
+							li
+								a(href='#').menu__link Management
+							li
+								a(href='#').menu__link Tonnage
+							li
+								a(href='#').menu__link Dimensions
+						ul.master__menu-col
+							li
+								a(href='#').menu__link Capacity
+							li
+								a(href='#').menu__link Yard
+							li
+								a(href='#').menu__link Classification
+
+					<!--============ MASTER DATA TABLE =============-->
+
+					table.table.master__table
+						tr.row
+							td.cell.options Name of vessel
+							td.cell.meanings EMMA MAERSK
+						tr.row
+							td.cell.options Imo
+							td.cell.meanings 9474060
+						tr.row
+							td.cell.options Mmsi
+							td.cell.meanings 2767860000
+						tr.row
+							td.cell.options  Callsign
+							td.cell.meanings ESJO
+						tr.row
+							td.cell.options Flag
+							td.cell.meanings GERMANY
+						tr.row
+							td.cell.options Vessel type
+							td.cell.meanings GAS TANKER > LNG TANKER
+						tr.row
+							td.cell.options Port of Registry
+							td.cell.meanings ROSTOCK
+						tr.row
+							td.cell.options Service Speed
+							td.cell.meanings 19.5
+						tr.row
+							td.cell.options Status of Ship Standartized
+							td.cell.meanings IN SERVICE / COMMISION
+						tr.row
+							td.cell.options Status of Normalized
+							td.cell.meanings 25/05/2014
+						tr.row
+							td.cell.options Hull Type
+							td.cell.meanings DOUBLE HULL
+						tr.row
+							td.cell.options Hull Material
+							td.cell.meanings ODENSE STEEL SHIPYORDINARY STRENGHT STEEL - ABS - CRADE A
+						tr.row
+							td.cell.options Decks Number
+							td.cell.meanings 1
+						tr.row
+							td.cell.options Bulkheads
+							td.cell.meanings 17
+						tr.row
+							td.cell.options Size Class
+							td.cell.meanings AFRAMAX
+
+
+
+			<!--============ FOOTER =============-->
+
+
+			footer.footer
+				div.base-col
+					span.copyright 2017 © MDS
+					a(href='https://www.linkedin.com/').social_link
+						img(src='in.png')
+					a(href='https://www.facebook.com/').social_link
+						img(src='fb.png')
+					a(href='#').footer__link Imprint
+					a(href='#').footer__link Terms & conditions
+					a(href='#').footer__link Privacy policy
+					a(href='#').footer__link Accounts
+					a(href='#').footer__link Shipowners
+					a(href='#').footer__link Shipyards
+					a(href='#').footer__link Catalog
+					a(href='#').footer__link Contact
+					a(href='#').footer__link Blog
+
+
+
+		<!-- =========== CHART.JS ============ -->
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js')
+
+		<!-- ============ JQUERY =========== -->
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+
+		<!-- ============ DATATABLES ============= -->
+		script(src='https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js')
+
+		<!-- ============= SCRIPTS  ============ -->
+		script(type='text/javascript', src='main.js')
